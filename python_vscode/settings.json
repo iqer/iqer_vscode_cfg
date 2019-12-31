@@ -1,0 +1,22 @@
+{
+    "python.pythonPath": "/home/cqh/anaconda2/envs/py27/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "yapf",
+    "search.exclude": {
+        "system/": true,
+        "!/system/*/.ps*": true,
+        "**.pyc": true
+        },
+        "python.testing.unittestArgs": [
+            "-v",
+            "-s",
+            "./tests",
+            "-p",
+            "test_*.py"
+        ],
+        "python.testing.pytestEnabled": false,
+        "python.testing.nosetestsEnabled": false,
+        "python.testing.unittestEnabled": true
+}

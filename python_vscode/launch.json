@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug Test File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "env": {"PYTHONPATH": "${workspaceRoot}"},
+            "cwd": "${fileDirname}",
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+        },
+        {
+            "name": "Python: Flask",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "cwd": "${workspaceFolder}/bin",
+            "env": {
+                "FLASK_APP": "${workspaceRoot}/bin/app.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "0"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        }
+    ]
+}
